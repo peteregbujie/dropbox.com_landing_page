@@ -110,13 +110,13 @@ function Navbar() {
           className={`${open ? "rotate-180 transform" : ""} h-6 w-6`}
          />
         </Disclosure.Button>
-        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-blue-500">
-         <ul>
+        <Disclosure.Panel className="pt-4 pb-2 text-sm text-blue-500 ">
+         <ul className="list-none">
           {Why.map((link) => (
            <li
             key={link.id}
-            className={` pb-4 ${
-             link.id == "resources" ? "font-bold" : "font-normal"
+            className={` pb-4 pl-0 ${
+             link.id == "better" ? "font-bold pt-4" : "font-normal"
             }`}
            >
             <Link href={`${link.id}`}>
@@ -145,9 +145,9 @@ function Navbar() {
           className={`${open ? "rotate-180 transform" : ""} h-6 w-6`}
          />
         </Disclosure.Button>
-        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+        <Disclosure.Panel className="pt-4 pb-2 text-sm text-gray-500">
          <span className="font-bold ">Do more than store with Dropbox</span>
-         <ul className="flex flex-col items-start pt-4">
+         <ul className="flex flex-col items-start pt-4 list-none">
           {Products.map(({ title, img, subtitle }) => (
            <li key={title} className="flex self-start pb-4 text-sm gap-x-4">
             <Image src={img} alt="dropbox" width={40} height={32} />
@@ -172,8 +172,8 @@ function Navbar() {
           className={`${open ? "rotate-180 transform" : ""} h-6 w-6`}
          />
         </Disclosure.Button>
-        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-         <ul>
+        <Disclosure.Panel className="pt-4 pb-2 text-sm text-gray-500">
+         <ul className="list-none">
           {Solutions.map((link, index) => (
            <li key={index} className="pb-4">
             <Link href={`${link}`}>
@@ -196,8 +196,8 @@ function Navbar() {
           className={`${open ? "rotate-180 transform" : ""} h-6 w-6`}
          />
         </Disclosure.Button>
-        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-         <ul>
+        <Disclosure.Panel className="pt-4 pb-2 text-sm text-gray-500">
+         <ul className="list-none">
           {Contact.map((link, index) => (
            <li key={index} className="pb-4">
             <Link href={`${link.title}`} className="pb-4">
@@ -220,8 +220,8 @@ function Navbar() {
           className={`${open ? "rotate-180 transform" : ""} h-6 w-6`}
          />
         </Disclosure.Button>
-        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-         <ul className="flex flex-col gap-y-4">
+        <Disclosure.Panel className="pt-4 pb-2 text-sm text-gray-500">
+         <ul className="flex flex-col list-none gap-y-4">
           <li>
            <Link href="">
             <a className="text-gray-700 hover:bg-zinc-300 ">Desktop app</a>

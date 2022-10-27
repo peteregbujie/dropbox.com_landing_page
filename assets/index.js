@@ -1,5 +1,6 @@
 import arrow from "./arrow_right.svg";
 import backup from "./Backup-logo-nav.svg";
+import barchart from "./barchart.png";
 import cloud from "./cloud done.svg";
 import docSend from "./DocSend-logo-nav.svg";
 import dropbox_gallery from "./dropbox-gallery.jpg";
@@ -8,6 +9,7 @@ import logo from "./Dropbox_logo.svg.png";
 import smile from "./emoji smile.svg";
 import helloSign from "./HelloSign-logo-nav.svg";
 import shield from "./shield.svg";
+import signature from "./signature.png";
 import twinkle from "./twinkle.svg";
 
 export {
@@ -22,4 +24,6 @@ export {
  cloud,
  twinkle,
  shield,
+ signature,
+ barchart,
 };
