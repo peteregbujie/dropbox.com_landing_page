@@ -21,6 +21,25 @@ export const navLinks1 = [
 
 export const navLinks2 = [
  {
+  id: "contact",
+  title: "Contact",
+ },
+ {
+  id: "getapp",
+  title: "Get app",
+ },
+ {
+  id: "Sign up",
+  title: "Sign up",
+ },
+ {
+  id: "sign in",
+  title: "Sign in",
+ },
+];
+
+export const navLinks3 = [
+ {
   id: "Sign up",
   title: "Sign up",
  },

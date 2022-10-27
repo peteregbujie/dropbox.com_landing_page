@@ -13,6 +13,7 @@ import {
  Contact,
  navLinks1,
  navLinks2,
+ navLinks3,
  Products,
  Solutions,
  Why,
@@ -25,7 +26,7 @@ function Navbar() {
 
  return (
   <header aria-label="Site Header" className="max-w-[1640] mx-auto bg-white">
-   <div className="items-center justify-between hidden w-[full] md:flex">
+   <div className="items-center justify-between hidden w-[full] md:flex py-2">
     <nav
      aria-label="Site Nav"
      className="flex items-center justify-around px-4"
@@ -70,7 +71,7 @@ function Navbar() {
     <Image src={logo} alt="dropbox" width={124} height={32} />
     <div className="flex">
      <ul className="flex items-center px-4 text-lg">
-      {navLinks2.map((link) => (
+      {navLinks3.map((link) => (
        <li key={link.id}>
         <Link href={`${link.id}`}>
          <a className="p-5 text-gray-700 hover:bg-zinc-300">{link.title}</a>
