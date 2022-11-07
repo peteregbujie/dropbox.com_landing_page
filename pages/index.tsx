@@ -1,8 +1,12 @@
 import type { NextPage } from "next";
-import Hero from "../components/Hero";
-import More from "../components/More";
-import Navbar from "../components/Navbar";
-import Products from "../components/Products";
+import {
+ Features,
+ Hero,
+ More,
+ Navbar,
+ Products,
+ Testimonials,
+} from "../components";
 
 const Home: NextPage = () => {
  return (
@@ -10,7 +14,9 @@ const Home: NextPage = () => {
    <Navbar />
    <Hero />
    <Products />
+   <Features />
    <More />
+   <Testimonials />
   </div>
  );
 };

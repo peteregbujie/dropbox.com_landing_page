@@ -11,6 +11,7 @@ module.exports = {
     sans: ["Poppins", ...defaultTheme.fontFamily.sans],
     headings: ["Work Sans"],
    },
+   visibility: ["group-hover"],
   },
  },
  plugins: [],
