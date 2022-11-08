@@ -25,7 +25,7 @@ function More(): JSX.Element {
         Work efficiently with teammates and clients, stay in sync on projects,
         and keep company data safe—all in one place.
        </p>
-       <button className="flex items-center justify-between px-4 py-6 text-lg font-bold text-white bg-blue-600 hover:opacity-75">
+       <button className="btn btn-white hover:opacity-75">
         Get Dropbox for work
         <HiChevronRight className="w-6 h-6" />
        </button>
@@ -46,8 +46,8 @@ function More(): JSX.Element {
         Work efficiently with teammates and clients, stay in sync on projects,
         and keep company data safe—all in one place.
        </p>
-       <button className="flex items-center justify-between px-4 py-6 text-lg font-bold text-white bg-blue-600 hover:opacity-75">
-        Get Dropbox for work
+       <button className="btn btn-white hover:opacity-75">
+        Get Dropbox for personal use
         <HiChevronRight className="w-6 h-6" />
        </button>
       </div>

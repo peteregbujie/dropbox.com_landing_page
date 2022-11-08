@@ -17,8 +17,8 @@ function Testimonials(): JSX.Element {
      <Slider />
     </div>
 
-    <div className="z-10 flex flex-col justify-between pt-8 lg:flex-row gap-y-6">
-     <h2 className="text-3xl font-bold text-center sm:text-4xl ">
+    <div className="z-10 grid grid-cols-1 pt-8 lg:grid-cols-2 gap-y-6">
+     <h2 className="pt-3 text-3xl font-bold text-center sm:text-4xl">
       For all things worth sharing.
      </h2>
      <button className="flex items-center justify-between w-full px-4 py-6 text-lg text-gray-800 bg-blue-600 hover:opacity-75">

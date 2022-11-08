@@ -15,11 +15,11 @@ function Slider(): JSX.Element {
  const length = slides.length;
 
  const nextSlide = () => {
-  setCurrent(current === 0 ? length - 1 : current - 1);
+  setCurrent(current === length - 1 ? 0 : current + 1);
  };
 
  const prevSlide = () => {
-  setCurrent(current === length - 1 ? 0 : current + 1);
+  setCurrent(current === 0 ? length - 1 : current - 1);
  };
 
  return (
@@ -90,10 +90,10 @@ function Slider(): JSX.Element {
      </article>
     );
    })}
-   <div className="flex pt-5 mx-auto">
+   <div className="flex pt-8 mx-auto">
     <HiChevronLeft
      className=" h-[40px] w-[40px]  p-2  hover:opacity-75 transition duration-300 z-10 cursor-pointer "
-     onClick={nextSlide}
+     onClick={prevSlide}
     />
     <div className="pt-2">
      {current + 1}
@@ -101,8 +101,8 @@ function Slider(): JSX.Element {
     </div>
 
     <HiChevronRight
-     className="h-[40px] w-[40px]  p-2  hover:opacity-75   transition duration-300 z-10 cursor-pointer"
-     onClick={prevSlide}
+     className="h-[40px] w-[40px]  p-2  hover:opacity-75 transition duration-300 z-10 cursor-pointer"
+     onClick={nextSlide}
     />
    </div>
   </section>

@@ -36,7 +36,7 @@ function Navbar() {
       {navLinks1.map((link, index) => (
        <li key={link.id}>
         <Link href={`${link.id}`}>
-         <a className="p-5 text-gray-700 hover:bg-zinc-300">{link.title}</a>
+         <a className="p-5 text-gray-700 hover:bg-[#f2eee8]">{link.title}</a>
         </Link>
        </li>
       ))}
@@ -50,12 +50,12 @@ function Navbar() {
       {navLinks2.map((link) => (
        <li key={link.id}>
         <Link href={`${link.id}`}>
-         <a className="p-5 text-gray-700 hover:bg-zinc-300">{link.title}</a>
+         <a className="p-5 text-gray-700 hover:bg-[#f2eee8]">{link.title}</a>
         </Link>
        </li>
       ))}
      </ul>
-     <button className="flex justify-between items-center py-2 px-4 text-white text-lg font-bold  bg-blue-600 w-[180px] hover:opacity-75">
+     <button className="btn btn-white py-3 w-[180px] hover:opacity-75">
       Get started <HiChevronRight />
      </button>
     </nav>
@@ -74,7 +74,7 @@ function Navbar() {
       {navLinks3.map((link) => (
        <li key={link.id}>
         <Link href={`${link.id}`}>
-         <a className="p-5 text-gray-700 hover:bg-zinc-300">{link.title}</a>
+         <a className="p-5 text-gray-700 hover:bg-[#f2eee8]">{link.title}</a>
         </Link>
        </li>
       ))}
@@ -121,7 +121,7 @@ function Navbar() {
            >
             <Link href={`${link.id}`}>
              <a
-              className={`text-gray-700 hover:bg-zinc-300 ${
+              className={`text-gray-700 hover:bg-[#f2eee8] ${
                link.id == "overview" ? "pb-6" : "pb-2"
               }`}
              >
@@ -177,7 +177,7 @@ function Navbar() {
           {Solutions.map((link, index) => (
            <li key={index} className="pb-4">
             <Link href={`${link}`}>
-             <a className="text-gray-700 hover:bg-zinc-300">{link}</a>
+             <a className="text-gray-700 hover:bg-[#f2eee8]">{link}</a>
             </Link>
            </li>
           ))}
@@ -201,7 +201,7 @@ function Navbar() {
           {Contact.map((link, index) => (
            <li key={index} className="pb-4">
             <Link href={`${link.title}`} className="pb-4">
-             <a className="text-gray-700 hover:bg-zinc-300 ">{link.title}</a>
+             <a className="text-gray-700 hover:bg-[#f2eee8] ">{link.title}</a>
             </Link>
            </li>
           ))}
@@ -224,12 +224,12 @@ function Navbar() {
          <ul className="flex flex-col list-none gap-y-4">
           <li>
            <Link href="">
-            <a className="text-gray-700 hover:bg-zinc-300 ">Desktop app</a>
+            <a className="text-gray-700 hover:bg-[#f2eee8] ">Desktop app</a>
            </Link>
           </li>
           <li>
            <Link href="">
-            <a className="text-gray-700 hover:bg-zinc-300 ">Mobile app</a>
+            <a className="text-gray-700 hover:bg-[#f2eee8] ">Mobile app</a>
            </Link>
           </li>
          </ul>
