@@ -26,7 +26,7 @@ function Navbar() {
 
  return (
   <header aria-label="Site Header" className="max-w-[1640] mx-auto bg-white">
-   <div className="items-center justify-between hidden w-[full] md:flex py-2">
+   <div className="items-center justify-between hidden w-[full] lg:flex py-2">
     <nav
      aria-label="Site Nav"
      className="flex items-center justify-around px-4"
@@ -67,7 +67,7 @@ function Navbar() {
     ""
    )}
    {/* mobile nav */}
-   <div className="flex justify-between w-full p-4 md:hidden">
+   <div className="flex justify-between w-full p-4 lg:hidden">
     <Image src={logo} alt="dropbox" width={124} height={32} />
     <div className="flex">
      <ul className="flex items-center px-4 text-lg">
@@ -97,7 +97,7 @@ function Navbar() {
     className={
      !nav
       ? "hidden"
-      : " bg-[#f7f5f2] flex flex-col justify-center items-center w-full py-8 md:hidden"
+      : " bg-[#f7f5f2] flex flex-col justify-center items-center w-full py-8 lg:hidden"
     }
    >
     <div>
