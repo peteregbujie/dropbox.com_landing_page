@@ -12,8 +12,8 @@ export default function Hero(): JSX.Element {
        Join over 700 million registered users who trust Dropbox
       </h2>
       <p className="mt-4 text-lg text-gray-300">
-       Easy to use, reliable, private and secure. It's no wonder Dropbox is the
-       choice for storing and sharing your most important files.
+       Easy to use, reliable, private and secure. It&apos;s no wonder Dropbox is
+       the choice for storing and sharing your most important files.
       </p>{" "}
      </div>
      <button className="flex items-center justify-between px-6 py-6 text-lg font-bold text-gray-700 bg-blue-400 hover:opacity-75">
@@ -35,8 +35,8 @@ export default function Hero(): JSX.Element {
       <Image src={smile} alt="smile emoji" width={50} height={50} />
       <span>Your files, not ours</span>
       <p>
-       WIth Dropbox, your files belong to you, not us, so you can be sure we're
-       not reselling your data.
+       WIth Dropbox, your files belong to you, not us, so you can be sure
+       we&apos;re not reselling your data.
       </p>
      </div>
      <div className="flex flex-col items-start gap-y-6">
