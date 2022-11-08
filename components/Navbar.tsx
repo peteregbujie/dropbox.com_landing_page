@@ -26,7 +26,7 @@ function Navbar() {
 
  return (
   <header aria-label="Site Header" className="max-w-[1640] mx-auto bg-white">
-   <div className="items-center justify-between hidden w-[full] lg:flex py-2">
+   <div className="items-center justify-between hidden w-[full] xl:flex py-2">
     <nav
      aria-label="Site Nav"
      className="flex items-center justify-around px-4"
@@ -81,7 +81,7 @@ function Navbar() {
      </ul>
 
      <div
-      className="flex items-center justify-end flex-1 lg:hidden"
+      className="flex items-center justify-end flex-1 xl:hidden"
       onClick={handleNav}
      >
       {nav ? (
@@ -97,7 +97,7 @@ function Navbar() {
     className={
      !nav
       ? "hidden"
-      : " bg-[#f7f5f2] flex flex-col justify-center items-center w-full py-8 lg:hidden"
+      : " bg-[#f7f5f2] flex flex-col justify-center items-center w-full py-8 xl:hidden"
     }
    >
     <div>
