@@ -67,7 +67,7 @@ function Navbar() {
     ""
    )}
    {/* mobile nav */}
-   <div className="flex justify-between w-full p-4 lg:hidden">
+   <div className="flex justify-between w-full p-4 xl:hidden">
     <Image src={logo} alt="dropbox" width={124} height={32} />
     <div className="flex">
      <ul className="flex items-center px-4 text-lg">
