@@ -13,9 +13,9 @@ import {
 function Footer(): JSX.Element {
  return (
   <div className="text-white bg-black">
-   <div className="flex flex-col justify-center p-20 mx-auto gap-y-8">
+   <div className="flex flex-col justify-center p-20 mx-auto gap-y-8 lg:p-10">
     <div className="grid grid-cols-2 lg:grid-cols-5 gap-x-10">
-     <ul>
+     <ul className="pb-8">
       {Footer_Dropbox.map((link, index) => (
        <li
         key={index}
@@ -71,7 +71,7 @@ function Footer(): JSX.Element {
        </li>
       ))}
      </ul>
-     <ul>
+     <ul className="pt-6">
       {Footer_Company.map((link, index) => (
        <li
         key={index}

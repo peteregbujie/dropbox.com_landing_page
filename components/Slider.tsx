@@ -25,11 +25,11 @@ function Slider(): JSX.Element {
  return (
   <section className="relative flex flex-col items-center justify-center mx-auto text-white group">
    <HiChevronRight
-    className="invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[30%] right-0 transition-colors delay-300 ease-linear duration-300 z-10 cursor-pointer "
+    className="invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[35%] right-0 transition-colors delay-300 ease-linear duration-300 z-10 cursor-pointer "
     onClick={nextSlide}
    />
    <HiChevronLeft
-    className=" invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[30%] left-0 transition-colors delay-300 ease-linear duration-300 z-10 cursor-pointer"
+    className=" invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[35%] left-0 transition-colors delay-300 ease-linear duration-300 z-10 cursor-pointer"
     onClick={prevSlide}
    />
    {slides.map((slide, index) => {
@@ -39,12 +39,12 @@ function Slider(): JSX.Element {
       className={`${
        index === current
         ? "duration-1000 opacity-100"
-        : " duration-1000opacity-0"
+        : " duration-1000 opacity-0"
       } relative `}
       key={index}
      >
       {index === current && (
-       <div className="grid grid-cols-2">
+       <div className="grid grid-cols-1 lg:grid-cols-2">
         <Image
          src={image}
          alt="testimonial"
@@ -69,7 +69,7 @@ function Slider(): JSX.Element {
            : image.src === "/_next/static/media/slide7.e730ecc1.jpg"
            ? "bg-amber-300"
            : ""
-         } flex flex-col justify-between py-6 pl-4 `}
+         } flex flex-col justify-between py-6 pl-4 h-[350px] lg:h-full`}
         >
          <div className="max-w-lg">
           <blockquote>
@@ -90,7 +90,7 @@ function Slider(): JSX.Element {
      </article>
     );
    })}
-   <div className="flex mx-auto mt-12">
+   <div className="flex pt-5 mx-auto">
     <HiChevronLeft
      className=" h-[40px] w-[40px]  p-2  hover:opacity-75 transition duration-300 z-10 cursor-pointer "
      onClick={nextSlide}
