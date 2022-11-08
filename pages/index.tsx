@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import {
  Features,
+ Footer,
  Hero,
  More,
  Navbar,
@@ -17,6 +18,7 @@ const Home: NextPage = () => {
    <Features />
    <More />
    <Testimonials />
+   <Footer />
   </div>
  );
 };

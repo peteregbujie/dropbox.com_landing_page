@@ -9,22 +9,7 @@ import {
  google,
  helloSign,
  microsoft,
- //  pane1,
- //  pane2,
- //  pane3,
- //  pane4,
- //  pane5,
- //  pane6,
- //  pane7,
- //  pane8,
  slack,
- slide1,
- slide2,
- slide3,
- slide4,
- slide5,
- slide6,
- slide7,
  trello,
  zoom,
 } from "../assets";
@@ -36,6 +21,14 @@ import pane5 from "../public/pane 5.png";
 import pane6 from "../public/pane 6.png";
 import pane7 from "../public/pane 7.svg";
 import pane8 from "../public/pane 8.png";
+
+import slide1 from "../public/slide1.jpg";
+import slide2 from "../public/slide2.jpg";
+import slide3 from "../public/slide3.jpg";
+import slide4 from "../public/slide4.jpg";
+import slide5 from "../public/slide5.jpg";
+import slide6 from "../public/slide6.jpg";
+import slide7 from "../public/slide7.jpg";
 
 export const navLinks1 = [
  {
@@ -372,4 +365,56 @@ export const Testimonials_Data = [
   image: slide7,
   name: "Andi Scull, Founder and Creative Director, HOPE Organization",
  },
+];
+
+export const Footer_Dropbox = [
+ "Dropbox",
+ "Desktop app",
+ "Mobile app",
+ "Integrations",
+ "Features",
+ "Solutions",
+ "Do more than store",
+ "Security",
+ "Advance access",
+];
+
+export const Footer_Products = [
+ " Products",
+ "Plus",
+ "Professional",
+ "Business",
+ "Enterprise",
+ "Dropbox Sign",
+ "DocSend",
+ "Plans",
+ "Product updates",
+];
+
+export const Footer_Support = [
+ "Support",
+ "Help center",
+ "Contact us",
+ "Privacy & terms",
+ "Cookie policy",
+ "Cookies & CCPA preferences",
+ "Sitemap",
+ "Learning resources",
+];
+
+export const Footer_Community = [
+ "Community",
+ "Blog",
+ "Developers",
+ "Community forums",
+ "Referrals",
+];
+
+export const Footer_Company = [
+ "Company",
+ "About us",
+ "Jobs",
+ "Investor relations",
+ "ESG",
+ "Partners",
 ];

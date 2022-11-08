@@ -15,28 +15,25 @@ function Slider(): JSX.Element {
  const length = slides.length;
 
  const nextSlide = () => {
-  setCurrent(current === length - 1 ? 0 : current + 1);
+  setCurrent(current === 0 ? length - 1 : current - 1);
  };
 
  const prevSlide = () => {
-  setCurrent(current === 0 ? length - 1 : current - 1);
+  setCurrent(current === length - 1 ? 0 : current + 1);
  };
- console.log(current);
- console.log(length);
 
  return (
   <section className="relative flex flex-col items-center justify-center mx-auto text-white group">
    <HiChevronRight
-    className="invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[30%] right-0 transition delay-300 ease-linear duration-300 z-10 cursor-pointer "
+    className="invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[30%] right-0 transition-colors delay-300 ease-linear duration-300 z-10 cursor-pointer "
     onClick={nextSlide}
    />
    <HiChevronLeft
-    className=" invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[30%] left-0 transition delay-300 ease-linear duration-300 z-10 cursor-pointer"
+    className=" invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[30%] left-0 transition-colors delay-300 ease-linear duration-300 z-10 cursor-pointer"
     onClick={prevSlide}
    />
    {slides.map((slide, index) => {
     const { testimonial, name, image } = slide;
-
     return (
      <article
       className={`${
