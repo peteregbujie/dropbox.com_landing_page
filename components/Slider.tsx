@@ -15,23 +15,49 @@ function Slider(): JSX.Element {
  const length = slides.length;
 
  const nextSlide = () => {
-  setCurrent(current === length - 1 ? 0 : current + 1);
+  setCurrent(current < length - 1 ? current + 1 : 6);
  };
 
  const prevSlide = () => {
-  setCurrent(current === 0 ? length - 1 : current - 1);
+  setCurrent(current > 1 ? current - 1 : 0);
  };
 
  return (
-  <section className="relative flex flex-col items-center justify-center mx-auto text-white group">
-   <HiChevronRight
-    className="invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[35%] right-0 transition-colors delay-300 ease-linear duration-300 z-10 cursor-pointer "
-    onClick={nextSlide}
-   />
-   <HiChevronLeft
-    className=" invisible h-[50px] w-[50px]  group-hover:visible p-12 bg-[#1E1919]  hover:opacity-75  place-items-center absolute top-[35%] left-0 transition-colors delay-300 ease-linear duration-300 z-10 cursor-pointer"
-    onClick={prevSlide}
-   />
+  <section className="relative flex flex-col items-center justify-center mx-auto text-white group ">
+   <div className="absolute flex justify-between w-full h-full top-[35%] left">
+    <button
+     onClick={prevSlide}
+     className="z-10 invisible h-[80px] w-[80px]  pl-8 group-hover:visible   bg-[#1E1919]  hover:opacity-75 text-center text-white transition-all duration-300 ease-in-out"
+    >
+     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-20 h-12 -ml-5"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+     >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
+     </svg>
+     <span className="sr-only">Prev</span>
+    </button>
+    <button
+     onClick={nextSlide}
+     className="z-10 invisible h-[80px] w-[80px]  group-hover:visible bg-[#1E1919]  hover:opacity-75 text-center text-white transition-all duration-300 ease-in-out"
+    >
+     <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="w-20 h-12 -ml-5"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+      strokeWidth={2}
+     >
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+     </svg>
+     <span className="sr-only">Next</span>
+    </button>
+   </div>
    {slides.map((slide, index) => {
     const { testimonial, name, image } = slide;
     return (
