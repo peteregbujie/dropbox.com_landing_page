@@ -70,7 +70,7 @@ function Navbar() {
    <div className="flex justify-between w-full p-4 xl:hidden">
     <Image src={logo} alt="dropbox" width={124} height={32} />
     <div className="flex">
-     <ul className="flex items-center px-4 text-lg">
+     <ul className="flex items-center px-2 text-sm md:text-base lg:text-lg">
       {navLinks3.map((link) => (
        <li key={link.id}>
         <Link href={`${link.id}`}>
