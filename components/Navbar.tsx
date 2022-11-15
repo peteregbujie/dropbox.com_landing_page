@@ -32,7 +32,7 @@ function Navbar() {
      className="flex items-center justify-around px-4"
     >
      <Image src={logo} alt="dropbox" width={124} height={32} />
-     <ul className="flex items-center justify-around px-4 text-lg">
+     <ul className="flex items-center justify-around px-2 text-sm md:text-base lg:text-lg">
       {navLinks1.map((link, index) => (
        <li key={link.id}>
         <Link href={`${link.id}`}>
@@ -46,7 +46,7 @@ function Navbar() {
      aria-label="Site Nav"
      className="flex items-center justify-around px-4"
     >
-     <ul className="flex items-center justify-around px-4 text-lg">
+     <ul className="flex items-center text-sm lg:text-lg">
       {navLinks2.map((link) => (
        <li key={link.id}>
         <Link href={`${link.id}`}>

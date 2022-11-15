@@ -22,7 +22,9 @@ function Products(): JSX.Element {
        Try for free
       </span>
      </div>
-     <Image src={signature} alt="dropbox" width={415} height={279} />
+     <div className="px-4 lg:px-0">
+      <Image src={signature} alt="dropbox" width={415} height={279} />
+     </div>
     </div>
    </div>
    <div className="bg-[#007891] text-white">
@@ -41,7 +43,9 @@ function Products(): JSX.Element {
        Try for free
       </span>
      </div>
-     <Image src={barchart} alt="dropbox" width={415} height={279} />
+     <div className="px-4 lg:px-0">
+      <Image src={barchart} alt="dropbox" width={415} height={279} />
+     </div>
     </div>
    </div>
   </section>
